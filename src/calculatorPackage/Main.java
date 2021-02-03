@@ -16,9 +16,9 @@ public class Main {
 
         System.out.println(num1 + " squared equals: " + Calculator.square(10));
 
-        System.out.println("The square root of " + num3 + " is: " + MagicCalculator.squareRootOf(num3) + ".");
+        System.out.println("The square root of " + num3 + " is: " + MagicCalculator.roundThisAnswer((float) MagicCalculator.squareRootOf(num3)) + ", rounded to 3 decimal places.");
 
-        System.out.println("The sine of " + num3 + " is: " + MagicCalculator.sinOfNumber(num3) + ".");
+        System.out.println("The sine of " + num3 + " is: " + MagicCalculator.roundThisAnswer((float) MagicCalculator.sinOfNumber(num3)) + ".");
 
         System.out.println("The cosine of " + num3 + " is: " + MagicCalculator.coSinOfNumber(num3) + ".");
 

@@ -6,12 +6,9 @@ import java.text.DecimalFormat;
 
 public class MagicCalculator extends Calculator {
     //Finding the Square Root of a Number
-    public static String squareRootOf(int inputNumber) {
-        float answer = (float)Math.sqrt(inputNumber);
-        DecimalFormat df = new DecimalFormat("#.###");
-        df.setRoundingMode(RoundingMode.CEILING);
-        String answerToReturn = df.format(answer);
-        return answerToReturn;
+    public static double squareRootOf(int inputNumber) {
+        return (float) Math.sqrt(inputNumber);
+
     }
     //Finding the Sine of a number:
     public static double sinOfNumber(int inputNumber) {
@@ -32,5 +29,11 @@ public class MagicCalculator extends Calculator {
             answer = answer * i;
         }
         return answer;
+    }
+    public static String roundThisAnswer(float inputNumber) {
+
+        DecimalFormat df = new DecimalFormat("#.###");
+        df.setRoundingMode(RoundingMode.CEILING);
+        return df.format(inputNumber);
     }
 }
