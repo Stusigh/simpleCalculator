@@ -17,13 +17,17 @@ public class Main {
 
         System.out.println(num1 + " squared equals: " + Calculator.square(10));
 
-        System.out.println("The square root of " + num3 + " is: " + MagicCalculator.roundThisAnswer((float) MagicCalculator.squareRootOf(num3), decimalPlacesToRoundTo) + ", rounded to " + decimalPlacesToRoundTo + " decimal places.");
+        System.out.println("The square root of " + num3 + " is: " + MagicCalculator.roundThisAnswer((float) MagicCalculator.squareRootOf(num3),
+                decimalPlacesToRoundTo) + ", rounded to " + decimalPlacesToRoundTo + " decimal places.");
 
-        System.out.println("The sine of " + num3 + " is: " + MagicCalculator.roundThisAnswer((float) MagicCalculator.sinOfNumber(num3), decimalPlacesToRoundTo) + ", rounded to " + decimalPlacesToRoundTo + " decimal places.");
+        System.out.println("The sine of " + num3 + " is: " + MagicCalculator.roundThisAnswer((float) MagicCalculator.sinOfNumber(num3),
+                decimalPlacesToRoundTo) + ", rounded to " + decimalPlacesToRoundTo + " decimal places.");
 
-        System.out.println("The cosine of " + num3 + " is: " + MagicCalculator.roundThisAnswer((float) MagicCalculator.coSinOfNumber(num3), decimalPlacesToRoundTo) + ", rounded to " + decimalPlacesToRoundTo + " decimal places.");
+        System.out.println("The cosine of " + num3 + " is: " + MagicCalculator.roundThisAnswer((float) MagicCalculator.coSinOfNumber(num3),
+                decimalPlacesToRoundTo) + ", rounded to " + decimalPlacesToRoundTo + " decimal places.");
 
-        System.out.println("The tangent of " + num3 + " is: " + MagicCalculator.roundThisAnswer((float) MagicCalculator.tanOfNumber(num3), decimalPlacesToRoundTo) + ", rounded to " + decimalPlacesToRoundTo + " decimal places.");
+        System.out.println("The tangent of " + num3 + " is: " + MagicCalculator.roundThisAnswer((float) MagicCalculator.tanOfNumber(num3),
+                decimalPlacesToRoundTo) + ", rounded to " + decimalPlacesToRoundTo + " decimal places.");
 
         System.out.println("The factorial of " + num3 + " is: " + MagicCalculator.factorialOfNumber(num3) + ".");
     }
