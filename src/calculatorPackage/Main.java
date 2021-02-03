@@ -2,15 +2,34 @@ package calculatorPackage;
 
 public class Main {
     public static void main(String[] args) {
-        MagicCalculator.add(10,2);
-        Calculator.subtract(10,2);
-        Calculator.multiply(10,2);
-        Calculator.divide(10,2);
-        Calculator.square(10);
-        MagicCalculator.squareRootOf(25);
-        MagicCalculator.sinOfNumber(5);
-        MagicCalculator.coSinOfNumber(5);
-        MagicCalculator.tanOfNumber(5);
-        MagicCalculator.factorialOfNumber(5);
+        int num1 = 10;
+        int num2 = 2;
+        int num3 = 5;
+
+        System.out.println(num1 + " added to " + num2 +" equals: " + MagicCalculator.add(10,2));
+
+        System.out.println(num1 + " subtracted from " + num2 +" equals: " + Calculator.subtract(10,2));
+
+        System.out.println(num1 + " multiplied by " + num2 +" equals: " + Calculator.multiply(10,2));
+
+        System.out.println(num1 + " divided by " + num2 +" equals: " + Calculator.divide(10,2));
+
+        System.out.println(num1 + " squared equals: " + Calculator.square(10));
+
+        System.out.println("The square root of " + num3 + " is: " + MagicCalculator.squareRootOf(num3) + ".");
+
+        System.out.println("The sine of " + num3 + " is: " + MagicCalculator.sinOfNumber(num3) + ".");
+
+        System.out.println("The cosine of " + num3 + " is: " + MagicCalculator.coSinOfNumber(num3) + ".");
+
+        System.out.println("The tangent of " + num3 + " is: " + MagicCalculator.tanOfNumber(num3) + ".");
+
+        System.out.println("The factorial of " + num3 + " is: " + MagicCalculator.factorialOfNumber(num3) + ".");
+
+
+
+
+
+
     }
 }
