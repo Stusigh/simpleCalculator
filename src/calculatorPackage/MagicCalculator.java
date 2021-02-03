@@ -30,9 +30,13 @@ public class MagicCalculator extends Calculator {
         }
         return answer;
     }
-    public static String roundThisAnswer(float inputNumber) {
-
-        DecimalFormat df = new DecimalFormat("#.###");
+    //Rounding an answer to n decimal places:
+    public static String roundThisAnswer(float inputNumber, int spacesDesired) {
+        String spacesToAdd = "#.";
+        for( int i=0;i<spacesDesired; i++) {
+            spacesToAdd = spacesToAdd + "#";
+        }
+        DecimalFormat df = new DecimalFormat(spacesToAdd);
         df.setRoundingMode(RoundingMode.CEILING);
         return df.format(inputNumber);
     }
